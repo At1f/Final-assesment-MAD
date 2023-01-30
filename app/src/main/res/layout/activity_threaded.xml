@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.labassignment3.ThreadedActivity">
+
+    <ImageView
+        android:id="@+id/imgVwProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="542dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="341dp"
+        android:onClick="fnTakePic"
+        android:text="Take Picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVwProfile" />
+
+    <TextView
+        android:id="@+id/tvGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="54dp"
+        android:text="Hello World"
+        android:textAlignment="inherit"
+        app:layout_constraintBottom_toTopOf="@+id/btnTakePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVwProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
